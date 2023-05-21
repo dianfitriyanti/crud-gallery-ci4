@@ -1,0 +1,292 @@
+ERROR - 2023-04-22 13:52:52 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('tb_image')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 13:53:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('tb_image')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 13:54:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('tb_image')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 13:54:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('uploadimage')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-04-22 14:56:24 --> Class "App\Controllers\BerkasModel" not found
+in APPPATH\Controllers\Berkas.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 14:56:25 --> Class "App\Controllers\BerkasModel" not found
+in APPPATH\Controllers\Berkas.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 14:59:33 --> Class "App\Controllers\BerkasModel" not found
+in APPPATH\Controllers\Berkas.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 15:02:24 --> Invalid file: "vwberkas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vwberkas.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('vwberkas', [], true)
+ 3 APPPATH\Controllers\Berkas.php(14): view('vwberkas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 15:04:27 --> Invalid file: "form_upload.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form_upload.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('form_upload', [], true)
+ 3 APPPATH\Controllers\Berkas.php(19): view('form_upload')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 15:57:56 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\vw_form_upload.php on line 86.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('vw_form_upload', [], true)
+ 4 APPPATH\Controllers\Berkas.php(19): view('vw_form_upload')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 15:57:59 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\vw_form_upload.php on line 86.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('vw_form_upload', [], true)
+ 4 APPPATH\Controllers\Berkas.php(19): view('vw_form_upload')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 16:00:07 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Berkas.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 16:02:55 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Berkas.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 16:03:16 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Berkas.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 16:06:01 --> Call to a member function getName() on null
+in APPPATH\Controllers\Berkas.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 16:16:39 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Berkas.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 16:21:01 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Berkas.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Berkas->save()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+ERROR - 2023-04-22 16:31:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('uploadimage')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 16:31:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('uploadimage')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 16:32:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('uploadimage')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 16:33:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('uploadimage')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 16:34:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('uploadimage')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-22 16:34:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 7 in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-22-135046_UploadImage.php(36): CodeIgniter\Database\Forge->createTable('uploadimage')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\UploadImage->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-04-22 16:49:22 --> Invalid file: "images/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('images/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('images/index', [], true)
+ 3 APPPATH\Controllers\ImageController.php(25): view('images/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 16:56:52 --> Undefined variable $pager
+in APPPATH\Views\vw_home.php on line 152.
+ 1 APPPATH\Views\vw_home.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Views\\vw_home.php', 152)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Views\\vw_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('vw_home', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('vw_home')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 17:05:22 --> Undefined variable $data
+in APPPATH\Controllers\Login.php on line 16.
+ 1 APPPATH\Controllers\Login.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Controllers\\Login.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-22 17:05:59 --> Undefined property: App\Controllers\Login::$model
+in APPPATH\Controllers\Login.php on line 12.
+ 1 APPPATH\Controllers\Login.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$model', 'C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Controllers\\Login.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')

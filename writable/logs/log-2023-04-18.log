@@ -1,0 +1,121 @@
+CRITICAL - 2023-04-18 03:12:31 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-04-18 03:18:30 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-04-18 01:46:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`username`)
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_gener...' at line 7 in C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-PHP8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-18-014211_Users.php(35): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\Users->up()
+#6 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-PHP8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-18 01:48:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`username`)
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_gener...' at line 7 in C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-PHP8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-18-014211_Users.php(35): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\Users->up()
+#6 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-PHP8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-18 01:57:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`username`)
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_gener...' at line 7 in C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp-PHP8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-18-014211_Users.php(35): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\Users->up()
+#6 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-PHP8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-PHP8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-04-18 02:31:39 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:32:27 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:32:28 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:32:31 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('register', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:32:33 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('register', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:33:48 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('register', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:33:51 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('register', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:34:00 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:34:00 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:34:23 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-18 02:34:25 --> Class "App\Filters\UsersAuthFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-PHP8\\htdocs\\crud-gallery-ci4\\public\\index.php')

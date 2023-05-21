@@ -1,0 +1,102 @@
+ERROR - 2023-04-23 13:41:00 --> mysqli_sql_exception: Table 'images' already exists in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `i...', 0)
+#1 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `i...')
+#2 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `i...')
+#3 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `i...')
+#4 C:\xampp-php8\htdocs\crud-gallery-ci4\app\Database\Migrations\2023-04-23-134032_Images.php(44): CodeIgniter\Database\Forge->createTable('images')
+#5 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(877): App\Database\Migrations\Images->up()
+#6 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp-php8\htdocs\crud-gallery-ci4\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp-php8\htdocs\crud-gallery-ci4\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp-php8\htdocs\crud-gallery-ci4\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-04-23 15:44:23 --> Call to a member function links() on null
+in APPPATH\Views\vw_index.php on line 72.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('vw_index', [], true)
+ 4 APPPATH\Controllers\ImageController.php(30): view('vw_index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 15:52:36 --> Cannot access offset of type string on string
+in APPPATH\Views\vw_index.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('vw_index', [], true)
+ 4 APPPATH\Controllers\ImageController.php(32): view('vw_index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 16:24:21 --> Undefined variable $contact
+in APPPATH\Views\vw_index.php on line 81.
+ 1 APPPATH\Views\vw_index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contact', 'C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Views\\vw_index.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Views\\vw_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('vw_index', [], true)
+ 5 APPPATH\Controllers\ImageController.php(31): view('vw_index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 16:35:36 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get('path')
+ 2 APPPATH\Controllers\ImageController.php(109): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->delete('3')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 16:38:55 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get('path')
+ 2 APPPATH\Controllers\ImageController.php(108): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->delete('4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 16:43:45 --> unlink(C:\xampp-php8\htdocs\crud-gallery-ci4\public/uploads1682258731_ccc833cd0a8613807afd.png): No such file or directory
+in APPPATH\Controllers\ImageController.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public/uploads1682258731_ccc833cd0a8613807afd.png): No such file or directory', 'C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Controllers\\ImageController.php', 109)
+ 2 APPPATH\Controllers\ImageController.php(109): unlink('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public/uploads1682258731_ccc833cd0a8613807afd.png')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->delete('1682258731_ccc833cd0a8613807afd.png')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 16:48:24 --> unlink(C:\xampp-php8\htdocs\crud-gallery-ci4\public/uploads/4): No such file or directory
+in APPPATH\Controllers\ImageController.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public/uploads/4): No such file or directory', 'C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Controllers\\ImageController.php', 110)
+ 2 APPPATH\Controllers\ImageController.php(110): unlink('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public/uploads/4')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->delete('4')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 16:49:52 --> unlink(C:\xampp-php8\htdocs\crud-gallery-ci4\public/uploads/5): No such file or directory
+in APPPATH\Controllers\ImageController.php on line 110.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public/uploads/5): No such file or directory', 'C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\app\\Controllers\\ImageController.php', 110)
+ 2 APPPATH\Controllers\ImageController.php(110): unlink('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public/uploads/5')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->delete('5')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
+CRITICAL - 2023-04-23 16:50:23 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp-php8\htdocs\crud-gallery-ci4\system\Model.php on line 840
+in SYSTEMPATH\Database\BaseBuilder.php on line 1608.
+ 1 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get('path')
+ 2 APPPATH\Controllers\ImageController.php(108): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->delete('6')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp-php8\\htdocs\\crud-gallery-ci4\\public\\index.php')
